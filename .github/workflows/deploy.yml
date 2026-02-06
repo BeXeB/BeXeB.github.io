@@ -28,6 +28,11 @@ jobs:
       - name: Build project
         run: npx ng build --configuration production --base-href /
 
+      - name: Configure Git user
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
       # Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         run: npx angular-cli-ghpages --dir=dist/portfolio/browser
