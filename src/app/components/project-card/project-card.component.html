@@ -1,0 +1,13 @@
+<div class="project-card">
+  @if (project) {
+    <div class="project-card-content" [routerLink]="['/projects', project.slug]">
+      <div class="project-image">
+        <img [src]="project.imageUrl" alt="{{ project.name }}" />
+      </div>
+      <div class="project-info">
+        <h2>{{ project.name }}</h2>
+        <p>{{ project.description }}</p>
+      </div>
+    </div>
+  }
+</div>

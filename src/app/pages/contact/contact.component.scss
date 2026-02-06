@@ -1,0 +1,81 @@
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 600px;
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.contact-item span {
+  font-size: 1.2em;
+}
+.contact-item a {
+  color: var(--light-gray);
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+.contact-item a:hover {
+  color: var(--blue);
+  transition: color 0.2s;
+}
+
+.message-apps {
+  display: flex;
+  flex-direction: row;
+  gap:8px;
+  justify-content: space-between;
+}
+
+.message-apps a {
+  flex: 1;
+
+  width: 120px;
+  height: 40px;
+
+  justify-content: center;
+  align-items: center;
+  display: flex;
+
+  color: var(--white);
+  text-decoration: none;
+  font-size: 1.2em;
+
+  border: 1px solid var(--dark-gray);
+  border-radius: 8px;
+}
+
+.message-apps a:hover {
+  background-color: var(--darker-gray);
+  border: 1px solid var(--gray);
+  box-shadow: 0 4px 8px var(--shadow-blue);
+  transition: background-color .2s, border .2s, box-shadow .2s;
+}
+
+.phone-numbers {
+  display: flex;
+  flex-direction: column;
+}
+
+.linked-in {
+  font-family: 'Avenir Black', monospace;
+}
+
+.other {
+  margin-top: 30px;
+  font-size: 1.5em;
+}

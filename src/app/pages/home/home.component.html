@@ -1,0 +1,40 @@
+<div class="background"></div>
+<div class="container">
+  <div class="logo">
+    <div class="logo-text">BIK</div>
+  </div>
+  <div class="about">
+    <div>
+      <div class="name">Bence Imre Kiss</div>
+      <div class="title">Software Developer</div>
+      <p class="about-text">
+        Lorem ipsum dolor sit amet consectetur adipiscing elit.
+        Quisque faucibus ex sapien vitae pellentesque sem placerat.
+        In id cursus mi pretium tellus duis convallis.
+        Tempus leo eu aenean sed diam urna tempor.
+        Pulvinar vivamus fringilla lacus nec metus bibendum egestas.
+        Iaculis massa nisl malesuada lacinia integer nunc posuere.
+        Ut hendrerit semper vel class aptent taciti sociosqu.
+        Ad litora torquent per conubia nostra inceptos himenaeos.
+      </p>
+    </div>
+    <div class="image-container">
+      <img src="assets/images/profile.jpeg" alt="Profile picture">
+    </div>
+  </div>
+  <div class="links">
+    <div class="link-card" [routerLink]="'/projects'">
+      <div class="link-card-title">Projects</div>
+      <div class="link-card-subtitle">View my projects</div>
+    </div>
+    <div class="link-card" [routerLink]="'/contact'">
+      <div class="link-card-title">Contact</div>
+      <div class="link-card-subtitle">Get in touch with me</div>
+    </div>
+    <div class="link-card" (click)="openCV()">
+      <div class="link-card-title">CV</div>
+      <div class="link-card-subtitle">View my CV</div>
+    </div>
+  </div>
+</div>
+

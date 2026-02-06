@@ -1,0 +1,122 @@
+.background {
+  width: 100%;
+  height: calc(100vh - 66px);
+  background-size: cover;
+  z-index: -1;
+  background-image:
+    radial-gradient(circle at top 50px left 50px, var(--shadow-blue), transparent 25%),
+    radial-gradient(circle at bottom 50px right 50px, var(--shadow-blue), transparent 25%);
+
+  position: fixed;
+}
+
+.logo {
+  margin: 5vh auto 0 auto;
+  max-width: 200px;
+  padding: 50px;
+  background-image: radial-gradient(circle, var(--shadow-blue), transparent 50%);
+}
+
+.logo:hover {
+  background-image: radial-gradient(circle, var(--shadow-blue), transparent 60%);
+  transform: scale(1.02);
+  transition: transform 0.2s ease, background-image 0.2s ease;
+}
+
+.logo-text {
+  user-select: none;
+  text-align: center;
+  font-weight: bold;
+  font-size: 6em;
+  color: var(--white);
+  text-decoration: none;
+  letter-spacing: -0.14em;
+  transform: translateX(-0.07em);
+}
+
+.container {
+  z-index: 1;
+  align-items: center;
+}
+
+.links {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.name {
+  font-size: 2em;
+  color: var(--white);
+  text-align: left;
+}
+
+.title {
+  font-size: 1em;
+  color: var(--white);
+  text-align: left;
+}
+
+.about {
+  display: flex;
+  flex-direction: row;
+  gap: 150px;
+  padding: 0 100px;
+}
+
+.about-text {
+  flex: 1;
+  color: var(--white);
+  font-size: 1.2em;
+  text-align: justify;
+}
+
+.image-container {
+  flex: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.links {
+  display: flex;
+  gap: 50px;
+  justify-content: space-around;
+  max-width: 1000px;
+  margin: 40px auto 0 auto;
+}
+
+.link-card {
+  flex:1;
+  height: 100%;
+  min-height: 200px;
+  background-color: var(--black);
+  border-radius: 8px;
+  border: 1px solid var(--dark-gray);
+  padding: 10px;
+}
+
+.link-card:hover {
+  border-color: var(--gray);
+  background-color: var(--darker-gray);
+  transition: border-color 0.2s;
+  transition: background-color 0.2s;
+  box-shadow: 0 4px 8px var(--shadow-blue);
+}
+
+.link-card-title {
+  font-size: 2em;
+  color: var(--white);
+}
+
+.link-card-subtitle {
+  font-size: 1em;
+  color: var(--light-gray);
+}

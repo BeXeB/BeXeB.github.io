@@ -1,0 +1,32 @@
+.title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.title p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.title .back-button {
+  cursor: pointer;
+  user-select: none;
+  font-size: 0.75rem;
+
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--dark-gray);
+  border-radius: 8px;
+  background-color: var(--darker-gray);
+}
+
+.title .back-button:hover {
+  background-color: var(--dark-gray);
+  transition: background-color 0.2s;
+}
