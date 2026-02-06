@@ -44,3 +44,30 @@ body {
   max-width: 1400px;
   margin: 0 auto;
 }
+
+@mixin button-base {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  border: 1px solid var(--dark-gray);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@mixin hover-card {
+  border-color: var(--gray);
+  background-color: var(--darker-gray);
+  box-shadow: 0 4px 8px var(--shadow-blue);
+  transition: border-color 0.2s, background-color 0.2s, box-shadow 0.2s;
+}
+
+@mixin link-hover {
+  color: var(--light-gray);
+  text-decoration: none;
+
+  &:hover {
+    color: var(--blue);
+    transition: color 0.2s;
+  }
+}

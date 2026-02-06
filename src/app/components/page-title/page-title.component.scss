@@ -1,3 +1,5 @@
+@import '../../../styles.scss';
+
 .title {
   display: flex;
   align-items: center;
@@ -12,17 +14,13 @@
 }
 
 .title .back-button {
-  cursor: pointer;
+  @include button-base;
+
   user-select: none;
   font-size: 0.75rem;
 
   width: 30px;
   height: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid var(--dark-gray);
-  border-radius: 8px;
   background-color: var(--darker-gray);
 }
 
