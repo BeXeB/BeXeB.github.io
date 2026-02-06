@@ -1,3 +1,5 @@
+@import '../../../styles.scss';
+
 .project-card {
   background-color: var(--black);
   border-radius: 8px;
@@ -22,12 +24,7 @@
 }
 
 .project-card:hover {
-  border-color: var(--gray);
-  background-color: var(--darker-gray);
-  transition: border-color 0.2s;
-  transition: background-color 0.2s;
-  transition: box-shadow 0.2s;
-  box-shadow: 0 4px 8px var(--shadow-blue);
+  @include hover-card;
 }
 
 .project-card-content {
