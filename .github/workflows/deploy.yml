@@ -26,7 +26,7 @@ jobs:
 
       # Build Angular app
       - name: Build project
-        run: ng build --configuration production --base-href /
+        run: npx ng build --configuration production --base-href /
 
       # Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
