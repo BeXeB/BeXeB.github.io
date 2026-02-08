@@ -13,12 +13,18 @@
   border: 1px solid var(--gray);
 }
 
-.project-details {
-  margin-bottom: 50px;
-}
-
 .top-row {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.project-details ::ng-deep img {
+  max-width: calc(100vw - 20px);
+}
+
+@media (max-width: 768px){
+  .top-row{
+    flex-direction: column;
+  }
 }

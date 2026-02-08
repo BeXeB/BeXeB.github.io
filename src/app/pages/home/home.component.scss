@@ -36,8 +36,8 @@
 }
 
 .container {
-  z-index: 1;
   align-items: center;
+  padding-bottom: 20px;
 }
 
 .name {
@@ -56,6 +56,7 @@
   gap: 150px;
   padding: 0 100px;
 }
+
 
 .about-text {
   flex: 1;
@@ -106,4 +107,60 @@
 .link-card-subtitle {
   font-size: 1em;
   color: var(--light-gray);
+}
+
+
+@media (max-width: 768px) {
+  .logo {
+    max-width: 150px;
+    padding: 30px;
+    margin: 0 auto;
+  }
+
+  .logo-text {
+    font-size: 4em;
+  }
+
+  .about {
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 20px;
+  }
+
+  .about-text {
+    font-size: 0.9em;
+    text-align: left;
+  }
+
+  .image-container img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .links {
+    gap: 10px;
+    padding: 0 20px;
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  .link-card {
+    min-height: 100px;
+  }
+
+  .link-card-title {
+    font-size: 1.5em;
+  }
+
+  .link-card-subtitle {
+    font-size: 0.9em;
+  }
+
+  .name {
+    font-size: 1.5em;
+  }
+
+  .title {
+    font-size: 0.9em;
+  }
 }

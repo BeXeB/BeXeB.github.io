@@ -27,7 +27,6 @@ export class ProjectDetailsComponent implements OnInit {
   async ngOnInit() {
     const slug = this.route.snapshot.paramMap.get('slug');
     this.project = await this.projectService.getProjectBySlug(slug ?? '');
-    console.log(this.project)
     const markdown = this.project?.content ?? '';
     if (markdown) {
       const rawHtml = await this.markdownService.convertToHtml(markdown);
