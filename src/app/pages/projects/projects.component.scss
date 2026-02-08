@@ -7,3 +7,14 @@
 .projects-container app-project-card {
   flex: 0 0 calc(50% - 10px);
 }
+
+@media (max-width: 1200px) {
+  .projects-container{
+    flex-direction: column;
+    gap:10px;
+  }
+
+  .projects-container app-project-card {
+    flex: 1;
+  }
+}

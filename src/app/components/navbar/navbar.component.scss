@@ -2,12 +2,12 @@
 
 .nav-container {
   background-color: var(--black);
-  overflow: hidden;
   position: sticky;
   top: 0;
   height: 65px;
   width: 100%;
   border-bottom: 1px solid var(--gray);
+  z-index: 1;
 }
 
 .navbar {
@@ -62,9 +62,62 @@
   color: var(--white);
   text-decoration: none;
   letter-spacing: -4px;
+  user-select: none;
 }
 
 .logo:hover a {
   color: var(--blue);
   transition: color 0.2s;
+}
+
+.hamburger-menu {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--white);
+  font-size: 1.5em;
+  cursor: pointer;
+  padding: 5px 10px;
+
+  &:hover {
+    color: var(--blue);
+    transition: color 0.2s;
+  }
+}
+
+@media (max-width: 768px) {
+  .hamburger-menu {
+    display: block;
+  }
+
+  .navbar-center {
+    position: fixed;
+    left: 0;
+    top: 65px;
+    width: 100vw;
+    height: 0;
+    background-color: var(--black);
+    flex-direction: column;
+    gap: 0;
+    overflow: hidden;
+    transition: height 0.2s ease;
+    transform: none;
+    border-bottom: 1px solid var(--gray);
+
+    &.mobile-menu-open {
+      height: 150px;
+    }
+  }
+
+  .nav-button {
+    width: 100vw;
+    height: 100%;
+    border-radius: 0;
+    border: none;
+    border-top: 1px solid var(--gray);
+  }
+
+  .social-links {
+    display: none;
+  }
 }

@@ -58,7 +58,49 @@
   font-family: 'Avenir Black', monospace;
 }
 
-.other {
+.section-header {
   margin-top: 30px;
   font-size: 1.5em;
+}
+
+@media (max-width: 768px) {
+  .section-header {
+    margin: 0;
+  }
+
+  .contact-container {
+    width: calc(100vw - 20px);
+    max-width: 600px;
+    margin: 0;
+    gap: 12px;
+  }
+
+  .center {
+    position: static;
+    transform: none;
+    margin: 0 auto;
+    left: auto;
+    top: auto;
+  }
+
+  .contact-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .contact-item span,
+  .contact-item a {
+    font-size: 1.1em;
+  }
+
+  .message-apps {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .message-apps a {
+    width: 100%;
+    justify-content: center;
+  }
 }

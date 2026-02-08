@@ -3,15 +3,18 @@
     <div class="logo">
       <a routerLink="/" routerLinkActive="active">BIK</a>
     </div>
-    <div class="nav-links navbar-center">
-        <a class="nav-button" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">About</a>
-        <a class="nav-button" routerLink="/projects" routerLinkActive="active">Projects</a>
-        <a class="nav-button" routerLink="/contact" routerLinkActive="active">Contact</a>
+    <div class="nav-links navbar-center" [class.mobile-menu-open]="mobileMenuOpen">
+        <a class="nav-button" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" (click)="closeMobileMenu()">About</a>
+        <a class="nav-button" routerLink="/projects" routerLinkActive="active" (click)="closeMobileMenu()">Projects</a>
+        <a class="nav-button" routerLink="/contact" routerLinkActive="active" (click)="closeMobileMenu()">Contact</a>
     </div>
     <div class="social-links">
       <a href="https://github.com/BeXeB/"><i class="fa-brands fa-github"></i></a>
       <a href="https://www.linkedin.com/in/bence-imre-kiss/"><i class="fa-brands fa-linkedin-in"></i></a>
       <a href="mailto:kissbenceimre99@gmail.com"><i class="fa-solid fa-at"></i></a>
     </div>
+    <button class="hamburger-menu" (click)="toggleMobileMenu()" [class.active]="mobileMenuOpen">
+      <i class="fa-solid fa-bars"></i>
+    </button>
   </nav>
 </div>
