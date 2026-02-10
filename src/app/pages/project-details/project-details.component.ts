@@ -33,4 +33,10 @@ export class ProjectDetailsComponent implements OnInit {
       this.htmlContent = this.sanitizer.bypassSecurityTrustHtml(rawHtml);
     }
   }
+
+  openProject(url: string | undefined){
+    if (url) {
+      window.open(url, '_blank')
+    }
+  }
 }

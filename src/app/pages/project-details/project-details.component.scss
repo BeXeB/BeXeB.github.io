@@ -20,11 +20,37 @@
 }
 
 .project-details ::ng-deep img {
-  max-width: calc(100vw - 20px);
+  max-width: 100%;
+}
+
+.project-details ::ng-deep pre {
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: pre;
+  max-width: 100%;
+  padding-bottom: 15px;
+}
+
+.project-details ::ng-deep a {
+  @include link-hover;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap:10px;
 }
 
 @media (max-width: 768px){
   .top-row{
+    flex-direction: column;
+  }
+
+  .go-button{
+    margin: 0;
+  }
+
+  .buttons {
     flex-direction: column;
   }
 }

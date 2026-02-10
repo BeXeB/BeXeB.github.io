@@ -1,7 +1,12 @@
 <div class="container">
   <div class="top-row">
     <app-page-title [title]="'Project Details'" [backLink]="'/projects'"></app-page-title>
-    <a class="go-button" href="{{ project?.projectUrl }}">Go to Project</a>
+    <div class="buttons">
+      @if (project?.projectUrl) {
+        <button class="go-button" (click)="openProject(project?.repoUrl)">Go to Project</button>
+      }
+      <button class="go-button" (click)="openProject(project?.repoUrl)">Go to Repo</button>
+    </div>
   </div>
   <div class="project-details" [innerHTML]="htmlContent"></div>
 </div>
