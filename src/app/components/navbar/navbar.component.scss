@@ -88,23 +88,31 @@
 @media (max-width: 768px) {
   .hamburger-menu {
     display: block;
+    min-height: 65px;
+  }
+
+  .navbar {
+    flex-wrap: wrap;
   }
 
   .navbar-center {
-    position: fixed;
+    position: relative;
+    transform: none;
+
     left: 0;
-    top: 65px;
-    width: 100vw;
     height: 0;
-    background-color: var(--black);
-    flex-direction: column;
+    width: 100vw;
+
     gap: 0;
+    flex-direction: column;
+
+    margin: 0 -20px;
+    background-color: var(--black);
     overflow: hidden;
     transition: height 0.2s ease;
-    transform: none;
-    border-bottom: 1px solid var(--gray);
 
     &.mobile-menu-open {
+      border-bottom: 1px solid var(--gray);
       height: 150px;
     }
   }

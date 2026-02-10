@@ -3,7 +3,8 @@ export interface Project {
   name: string;
   description: string;
   imageUrl: string;
-  projectUrl: string;
+  repoUrl: string;
   fileName: string;
+  projectUrl?: string;
   content?: string;
 }

@@ -14,6 +14,7 @@ export class ProjectService {
       description:
         'A portfolio website built with Angular to showcase my projects.',
       imageUrl: '/assets/images/angular-portfolio.jpg',
+      repoUrl: 'https://github.com/BeXeB/BeXeB.github.io',
       projectUrl: 'https://bexeb.github.io/',
       fileName: 'angular-portfolio.md',
     },
@@ -25,18 +26,18 @@ export class ProjectService {
         focused on simplifying graph manipulation with specialized operations
         and enabling graph visualization through DOT integration.`,
       imageUrl: '/assets/images/graphite.jpg',
-      projectUrl: 'https://github.com/BeXeB/Graphite',
+      repoUrl: 'https://github.com/BeXeB/Graphite',
       fileName: 'graphite.md',
     },
     {
       slug: 'sc2-bot',
-      name: 'SC2 Bot',
+      name: 'MontyBot',
       description:
         `An intelligent agent capable of playing StarCraft II.
         The agent utilized Monte-Carlo Tree Search for Action selection
         and Neural Networks to analyze the state of the game.`,
       imageUrl: '/assets/images/sc2-bot.jpg',
-      projectUrl: 'https://github.com/BeXeB/SC2Bot',
+      repoUrl: 'https://github.com/BeXeB/SC2Bot',
       fileName: 'sc2-bot.md',
     },
     {
@@ -45,9 +46,9 @@ export class ProjectService {
       description:
         `A system which allows developers to expose the code of objects,
         allowing players to interactively modify in-game behaviour
-        through a custom C-like scripting language.`,
+        through a custom scripting language.`,
       imageUrl: '/assets/images/programmable-behaviours.jpg',
-      projectUrl: 'https://github.com/BeXeB/FinalProject',
+      repoUrl: 'https://github.com/BeXeB/FinalProject',
       fileName: 'programmable-behaviours.md',
     },
   ];

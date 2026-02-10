@@ -23,8 +23,22 @@
   max-width: calc(100vw - 20px);
 }
 
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap:10px;
+}
+
 @media (max-width: 768px){
   .top-row{
+    flex-direction: column;
+  }
+
+  .go-button{
+    margin: 0;
+  }
+
+  .buttons {
     flex-direction: column;
   }
 }
