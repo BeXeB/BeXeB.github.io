@@ -14,6 +14,7 @@ A portfolio website built with Angular to showcase my projects.
 ---
 
 ## Tech Stack
+
 - **Angular**
 - **TypeScript**
 - **CSS/SCSS**

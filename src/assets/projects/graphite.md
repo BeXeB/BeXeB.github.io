@@ -2,7 +2,7 @@
 
 ## About
 
-Graphite is an object-oriented programming language designed to make the manipulation of graphs simpler. 
+Graphite is an object-oriented programming language designed to make the manipulation of graphs simpler.
 It also supports the visualization of Graphs with a DOT integration.
 
 Originally developed as a university compiler project, Graphite was implemented from scratch, including a custom lexer, parser, type checker, and transpiler targeting C#.
@@ -23,7 +23,7 @@ Originally developed as a university compiler project, Graphite was implemented 
 
 ## Graph Operations
 
-```
+```C#
 # Specify which graph to do the list of operations on
 G {
   # Add a directed edge from vertices with predicate_1 to vertices with predicate_2 with weight 1.2
@@ -57,13 +57,16 @@ G {
   ++ G2;
 };
 ```
+
 ---
 
 ## Showcase
+
 ### Graph operations showcase
 
 Function that creates a bipartite graph:
-```
+
+```C#
 bipartite(int n, int m) returns DGraph
 {
   DGraph g = new DGraph();        # Creates a new Directed Graph
@@ -78,7 +81,8 @@ bipartite(int n, int m) returns DGraph
 ```
 
 An example of a binary tree:
-```
+
+```C#
 bTree(int n) returns DGraph
 {
   DGraph tree = new DGraph();
@@ -105,17 +109,24 @@ bTree(int n) returns DGraph
   return tree;
 }
 ```
+
+![Image of the tree graph](assets/images/tree-example.png)
+
 ### Functions showcase
 
 Function declaration is done as seen here:
-```
+
+```C#
 add(int a, int b) returns int 
 {
   return a + b;
 }
+
 ```
+
 Functions can be declared inside another function:
-```
+
+```C#
 outer(int a) returns int
 {
   inner() returns int { return 3; }
@@ -124,7 +135,8 @@ outer(int a) returns int
 ```
 
 Since functions are first-class members, they can be stored in variables, passed as parameters, etc.:
-```
+
+```C#
 # The type of this function is Func<int, Func<int, int>, int> (Func<return_type, param1_type, ...>)
 applyFunction(Func<int, int> f, int a) returns int {
   return f(a);
@@ -145,10 +157,12 @@ int a = getApplier()(increment, 1);
 Set<Func<int,int>> set2 = {increment, outer};
 
 ```
+
 ### Classes and Methods showcase
 
 A class declaration looks like this:
-```
+
+```C#
 public class Counter
 {
   public int value = 0;
@@ -162,7 +176,8 @@ public class Counter
 ```
 
 Inheritance in Graphite is done with the extends keyword, and the subclasses can access members of the base class with the super keyword:
-```
+
+```C#
 public class AdvancedCounter extends Counter
 {
   public Reset() returns void
@@ -180,7 +195,7 @@ public class AdvancedCounter extends Counter
 ---
 
 ## Tech Stack
-- C#
-- DOT
-- GraphViz
 
+- **C#**
+- **DOT**
+- **GraphViz**
