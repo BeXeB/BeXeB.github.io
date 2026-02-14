@@ -3,7 +3,7 @@
     <app-page-title [title]="'Project Details'" [backLink]="'/projects'"></app-page-title>
     <div class="buttons">
       @if (project?.projectUrl) {
-        <button class="go-button" (click)="openProject(project?.repoUrl)">Go to Project</button>
+        <button class="go-button" (click)="openProject(project?.projectUrl)">Go to Project</button>
       }
       <button class="go-button" (click)="openProject(project?.repoUrl)">Go to Repo</button>
     </div>

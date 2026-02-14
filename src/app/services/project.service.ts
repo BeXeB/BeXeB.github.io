@@ -41,7 +41,7 @@ export class ProjectService {
       fileName: 'sc2-bot.md',
     },
     {
-      slug: 'Programmable Behaviours',
+      slug: 'programmable-behaviours',
       name: 'Programmable Behaviours',
       description:
         `A system which allows developers to expose the code of objects,
@@ -50,6 +50,28 @@ export class ProjectService {
       imageUrl: '/assets/images/ProgrammableBehaviours.svg',
       repoUrl: 'https://github.com/BeXeB/FinalProject',
       fileName: 'programmable-behaviours.md',
+    },
+    {
+      slug: 'peregrination',
+      name: 'Peregrination',
+      description:
+        `Peregrination is a game that teaches players the basics of programming.
+         It teache players the rudimentary building blocks of all programs, such as conditionals or loops.`,
+      imageUrl: '/assets/images/Peregrination.svg',
+      repoUrl: 'https://github.com/BeXeB/RoverGame',
+      projectUrl: 'https://bexeb.itch.io/peregrination',
+      fileName: 'peregrination.md',
+    },
+    {
+      slug: 'xlsx-converter',
+      name: 'XLSX Converter',
+      description:
+        `I created this XLSX converter to help teachers at my elementary school quickly
+        convert their existing spreadsheets into the format needed for the digital platform.`,
+      imageUrl: '/assets/images/xlsx-converter.svg',
+      repoUrl: 'https://github.com/BeXeB/xlsx-converter',
+      projectUrl: 'https://bexeb.github.io/xlsx-converter/',
+      fileName: 'xlsx-converter.md',
     },
   ];
 
